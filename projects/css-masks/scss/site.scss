@@ -1,0 +1,39 @@
+
+@import "partials/notifications";
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+$font:    roboto;
+$primary-color: #333;
+
+body {
+  background-color: antiquewhite;
+  font: 100% $font;
+  color: $primary-color;
+}
+p{ font-family: $font; font-weight: 100; @include font-size(14px)}
+
+@mixin small{
+  @media only screen and (min-width: 320px) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media only screen and (min-width: 1024px) {
+    @content;
+  }
+}

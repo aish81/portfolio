@@ -1,0 +1,14 @@
+.notification{
+  padding:1em;
+}
+.error {
+  @extend .notification;
+  background-color: red;
+  color: antiquewhite;
+}
+
+.success{
+  @extend .notification;
+  background-color: aquamarine;
+  color: #333333;;
+}

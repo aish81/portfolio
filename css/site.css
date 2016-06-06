@@ -1,0 +1,23 @@
+.notification, .error, .success {
+  padding: 1em; }
+
+.error {
+  background-color: red;
+  color: antiquewhite; }
+
+.success {
+  background-color: aquamarine;
+  color: #333333; }
+
+body {
+  background-color: antiquewhite;
+  font: 100% roboto;
+  color: #333; }
+
+p {
+  font-family: roboto;
+  font-weight: 100;
+  font-size: 14px;
+  font-size: 0.875rem; }
+
+/*# sourceMappingURL=site.css.map */
